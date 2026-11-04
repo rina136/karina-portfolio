@@ -28,7 +28,7 @@ function Projects() {
             <div className="mt-4 flex flex-wrap gap-2">{p.tech.map((t) => <Tag key={t}>{t}</Tag>)}</div>
             <div className="mt-5 flex gap-5 text-sm">
               <a href={p.github} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-primary hover:underline"><Github size={16} /> GitHub</a>
-              <a href={p.demo} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-primary hover:underline"><ExternalLink size={16} /> Live Demo</a>
+              /* <a href={p.demo} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-primary hover:underline"><ExternalLink size={16} /> Live Demo</a>*/
             </div>
           </article>
         ))}
