@@ -105,7 +105,7 @@ export function SectionTitle({ comment, title }: { comment: string; title: strin
   return (
     <div className="mb-8">
       <p className="font-mono text-sm text-code-comment">// {comment}</p>
-      <h1 className="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">{title}</h1>
+      <h1 className="mt-1 font-display text-4xl font-extrabold tracking-tight text-white md:text-5xl">{title}</h1>
     </div>
   );
 }
