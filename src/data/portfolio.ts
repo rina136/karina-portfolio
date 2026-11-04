@@ -1,6 +1,7 @@
 // Edit all personal content and links here.
 export const profile = {
   name: "Karina",
+  fullName: "Karina Muley", // shown big on the homepage
   role: "Computer Science Student / Backend Developer",
   intro:
     "I'm a Computer Science student who enjoys building reliable backend systems, designing clean APIs and working with databases and cloud tools.",
