@@ -27,8 +27,8 @@ export const projects = [
     description:
       "A URL shortening service with a REST API for creating and resolving short links, backed by a relational database and packaged with Docker.",
     tech: ["Node.js", "Express", "PostgreSQL", "Docker","Jest"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/rina136/SecureLink",
+    
   },
   {
     name: "Mental Health Support App",
@@ -36,8 +36,8 @@ export const projects = [
     description:
       "A desktop application offering mental health support features, with a Swing interface and persistent data stored in MySQL via JDBC.",
     tech: ["Java", "Swing", "JDBC", "MySQL"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/MalevolentMist/SafeSpace---A-Mental-Health-App",
+    
   },
   {
     name: "Container Health Monitor",
@@ -45,8 +45,8 @@ export const projects = [
     description:
       "A dashboard for monitoring the status of Docker containers, with an Express backend using Dockerode and a React frontend.",
     tech: ["Node.js", "Express", "Dockerode", "React"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/rina136/health-monitor",
+   
   },
 ];
 
