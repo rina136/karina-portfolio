@@ -20,7 +20,7 @@ function Home() {
     <section className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
       <div>
         <p className="font-mono text-sm text-code-comment">// hello world!! welcome to my portfolio {"<3"}</p>
-        <h1 className="mt-3 font-display text-5xl font-extrabold leading-none tracking-tight text-code-function md:text-6xl lg:text-7xl">
+        <h1 className="mt-3 bg-gradient-to-b from-white to-pink-500 bg-clip-text font-display text-6xl font-extrabold leading-none tracking-tight text-transparent md:text-7xl lg:text-8xl">
           {profile.fullName}
         </h1>
         <p className="mt-3 font-mono text-base text-muted-foreground">{profile.role}</p>
