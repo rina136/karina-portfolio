@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { User } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
+import { Typewriter } from "@/components/Typewriter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
