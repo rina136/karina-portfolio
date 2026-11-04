@@ -16,7 +16,7 @@ export const about = {
     "I'm studying Computer Science, where I've built a foundation in programming, data structures, databases and software engineering.",
     "I'm especially interested in backend development, software engineering practices, databases and cloud technologies — the parts of a system that keep everything running reliably.",
   ],
-  interests: ["Backend development", "Software engineering", "Databases", "Cloud technologies"],
+  interests: ["Backend development", "DevOps", "Software engineering", "Cloud technologies"],
   hobbies: ["Reading", "Art", "Football"],
 };
 
