@@ -66,7 +66,7 @@ export const experience = [
     points: [
       "Assisted in updating website",
       "Maintained codebase",
-      "https://www.muley.net/Default.aspx",
+      
       
     ],
   },
