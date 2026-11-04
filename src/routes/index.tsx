@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { User } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
+import { Typewriter } from "@/components/Typewriter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +24,9 @@ function Home() {
         <h1 className="mt-3 bg-gradient-to-b from-white to-pink-500 bg-clip-text font-display text-6xl font-extrabold leading-none tracking-tight text-transparent md:text-7xl lg:text-8xl">
           {profile.fullName}
         </h1>
-        <p className="mt-3 font-mono text-base text-muted-foreground">{profile.role}</p>
+        <p className="mt-3 font-mono text-base text-muted-foreground">
+          <Typewriter text={profile.role} />
+        </p>
         <p className="mt-6 max-w-xl leading-relaxed">{profile.intro}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild><Link to="/projects">View Projects</Link></Button>
