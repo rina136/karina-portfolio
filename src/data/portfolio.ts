@@ -4,7 +4,7 @@ export const profile = {
   fullName: "Karina Muley", // shown big on the homepage
   role: "Computer Science Student / Backend Developer",
   intro:
-    "I'm a Computer Science student who enjoys building reliable backend systems, designing clean APIs and working with databases and cloud tools.",
+    "I'm a Computer Science student who enjoys building reliable backend systems, working with databases and learning cloud tools.",
   email: "karinamuley13@gmail.com",
   github: "https://github.com/rina136",
   linkedin: "https://www.linkedin.com/in/karina-muley-718089320/",
