@@ -4,11 +4,11 @@ export const profile = {
   role: "Computer Science Student / Backend Developer",
   intro:
     "I'm a Computer Science student who enjoys building reliable backend systems, designing clean APIs and working with databases and cloud tools.",
-  email: "karina@example.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://www.linkedin.com/in/your-profile",
+  email: "karinamuley13@gmail.com",
+  github: "https://github.com/rina136",
+  linkedin: "https://www.linkedin.com/in/karina-muley-718089320/",
   resume: "#", // replace with a link to your resume PDF
-  photo: "", // replace with an image URL; leave empty for placeholder
+  
 };
 
 export const about = {
@@ -26,7 +26,7 @@ export const projects = [
     file: "securelink.ts",
     description:
       "A URL shortening service with a REST API for creating and resolving short links, backed by a relational database and packaged with Docker.",
-    tech: ["Node.js", "Express", "PostgreSQL", "Docker"],
+    tech: ["Node.js", "Express", "PostgreSQL", "Docker","Jest"],
     github: "#",
     demo: "#",
   },
@@ -72,7 +72,7 @@ export const experience = [
   {
     org: "Lila Poonawalla Foundation",
     role: "Volunteer English Teacher",
-    period: "",
+    period: "8 weeks",
     points: ["Taught English language to young girls."],
   },
 ];
