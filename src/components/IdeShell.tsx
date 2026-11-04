@@ -37,7 +37,7 @@ export function IdeShell({ children }: { children: ReactNode }) {
       </header>
 
       <div className="relative flex min-h-0 flex-1">
-        <nav className="hidden w-12 shrink-0 flex-col items-center gap-4 border-r bg-chrome py-3 text-muted-foreground md:flex">
+        <nav className="hidden w-12 shrink-0 flex-col items-center gap-4 border-r bg-activity py-3 text-muted-foreground md:flex">
           <Files size={20} className="text-primary" />
           <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-primary"><Github size={20} /></a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-primary"><Linkedin size={20} /></a>
