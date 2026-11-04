@@ -20,8 +20,8 @@ function Home() {
     <section className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
       <div>
         <p className="font-mono text-sm text-code-comment">// hello world!! welcome to my portfolio {"<3"}</p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
-          Hi, I'm <span className="text-primary">{profile.name}</span>.
+        <h1 className="mt-3 font-display text-5xl font-extrabold leading-none tracking-tight text-code-function md:text-6xl lg:text-7xl">
+          {profile.fullName}
         </h1>
         <p className="mt-3 font-mono text-base text-muted-foreground">{profile.role}</p>
         <p className="mt-6 max-w-xl leading-relaxed">{profile.intro}</p>
