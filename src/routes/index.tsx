@@ -19,7 +19,7 @@ function Home() {
   return (
     <section className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
       <div>
-        <p className="font-mono text-sm text-code-comment">// hello world!! welcome to my portfolio <3</p>
+        <p className="font-mono text-sm text-code-comment">// hello world!! welcome to my portfolio {"<3"}</p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
           Hi, I'm <span className="text-primary">{profile.name}</span>.
         </h1>
