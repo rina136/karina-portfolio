@@ -21,7 +21,7 @@ function About() {
       <div className="space-y-4 leading-relaxed">
         {about.paragraphs.map((p) => <p key={p}>{p}</p>)}
       </div>
-      <h2 className="mt-10 font-mono text-sm font-semibold text-primary">## Interests</h2>
+      <h2 className="mt-10 font-mono text-sm font-semibold text-code-comment">## Interests</h2>
       <div className="mt-3 flex flex-wrap gap-2">{about.interests.map((i) => <Tag key={i}>{i}</Tag>)}</div>
       <h2 className="mt-8 font-mono text-sm font-semibold text-primary">## Hobbies</h2>
       <div className="mt-3 flex flex-wrap gap-2">{about.hobbies.map((h) => <Tag key={h}>{h}</Tag>)}</div>
