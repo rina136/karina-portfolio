@@ -60,9 +60,20 @@ export const skills: Record<string, string[]> = {
 
 export const experience = [
   {
+    org: "Satya Muley & Co.",
+    role: "Website Intern",
+    period: "May-July 2026",
+    points: [
+      "Assisted in updating website",
+      "Maintained codebase",
+      "https://www.muley.net/Default.aspx",
+      
+    ],
+  },
+  {
     org: "Mahatma Phule Apang Prashikshan Kendra",
     role: "Service-Learning Volunteer",
-    period: "120 hours",
+    period: "July-November 2026",
     points: [
       "Taught spoken English to young adults.",
       "Taught SQL / MySQL fundamentals.",
@@ -72,7 +83,7 @@ export const experience = [
   {
     org: "Lila Poonawalla Foundation",
     role: "Volunteer English Teacher",
-    period: "8 weeks",
+    period: "October-December 2022",
     points: ["Taught English language to young girls."],
   },
 ];
