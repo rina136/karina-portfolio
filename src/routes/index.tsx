@@ -34,6 +34,7 @@ function Home() {
           <Button asChild variant="ghost"><a href={profile.resume} target="_blank" rel="noreferrer">Resume</a></Button>
         </div>
       </div>
+      {/*
       <div className="mx-auto flex h-48 w-48 items-center justify-center overflow-hidden rounded-xl border bg-secondary md:h-60 md:w-60">
         {profile.photo ? (
           <img src={profile.photo} alt={profile.name} className="h-full w-full object-cover" />
@@ -41,6 +42,7 @@ function Home() {
           <User size={72} className="text-muted-foreground" aria-label="Profile photo placeholder" />
         )}
       </div>
+      */}
     </section>
   );
 }
