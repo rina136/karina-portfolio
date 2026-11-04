@@ -8,7 +8,7 @@ export const profile = {
   github: "https://github.com/rina136",
   linkedin: "https://www.linkedin.com/in/karina-muley-718089320/",
   resume: "#", // replace with a link to your resume PDF
-  
+  photo: "", // replace with a link to your profile photo (e.g. hosted image URL)
 };
 
 export const about = {
