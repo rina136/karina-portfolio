@@ -5,15 +5,14 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system definition — VS Code Dark+ theme.
+ * Design system — deep-black VS Code-inspired theme.
  *
  * The @theme inline block maps CSS custom properties to Tailwind utility
  * classes (e.g. --color-primary -> bg-primary, text-primary).
  *
- * Color values are the VS Code Dark+ palette converted to oklch:
- *   editor #1E1E1E, sidebar #252526, activity bar #333333,
- *   border #3C3C3C, text #D4D4D4, accent #007ACC, highlight #264F78,
- *   syntax green #6A9955, orange #CE9178, yellow #DCDCAA.
+ * Backgrounds are near-black (editor #070707, sidebar/chrome #101010,
+ * activity #131313) with bright blue accents (oklch(0.72 0.155 246)),
+ * and syntax-green/orange/yellow code accents.
  */
 
 @theme inline {
@@ -71,62 +70,62 @@
 
 :root {
   --radius: 0.5rem;
-  /* editor background #1E1E1E */
-  --background: oklch(0.273 0 0);
+  /* near-black editor background (deepened from #1E1E1E) */
+  --background: oklch(0.07 0 0);
   /* primary text #D4D4D4 */
   --foreground: oklch(0.866 0.005 264);
   /* cards: one step above the editor */
-  --card: oklch(0.303 0.003 264);
+  --card: oklch(0.14 0 0);
   --card-foreground: oklch(0.866 0.005 264);
-  --popover: oklch(0.303 0.003 264);
+  --popover: oklch(0.14 0 0);
   --popover-foreground: oklch(0.866 0.005 264);
-  /* accent blue #007ACC */
-  --primary: oklch(0.552 0.132 253);
-  --primary-foreground: oklch(0.99 0 0);
-  /* highlight blue #264F78 — selected files, active surfaces */
-  --secondary: oklch(0.411 0.066 253);
+  /* bright accent blue */
+  --primary: oklch(0.72 0.155 246);
+  --primary-foreground: oklch(0.07 0 0);
+  /* selected surfaces — brighter highlight blue */
+  --secondary: oklch(0.34 0.09 253);
   --secondary-foreground: oklch(0.866 0.005 264);
-  --muted: oklch(0.333 0.003 264);
+  --muted: oklch(0.16 0 0);
   /* muted text #858585 */
-  --muted-foreground: oklch(0.6 0 0);
-  /* secondary text #9DA5B4 */
-  --accent: oklch(0.411 0.066 253);
+  --muted-foreground: oklch(0.62 0 0);
+  /* secondary text */
+  --accent: oklch(0.34 0.09 253);
   --accent-foreground: oklch(0.866 0.005 264);
-  --destructive: oklch(0.628 0.19 27);
+  --destructive: oklch(0.68 0.21 25);
   --destructive-foreground: oklch(0.99 0 0);
-  /* borders and dividers #3C3C3C */
-  --border: oklch(0.414 0 0);
-  --input: oklch(0.414 0 0);
-  --ring: oklch(0.552 0.132 253);
-  /* title bar / tab strip chrome: sidebar #252526 */
-  --chrome: oklch(0.303 0.003 264);
-  /* activity bar #333333 — darker than the sidebar visually via flat fill */
-  --activity: oklch(0.363 0 0);
-  /* highlight blue #264F78 */
-  --highlight: oklch(0.411 0.066 253);
+  /* borders and dividers — visible on black */
+  --border: oklch(0.3 0 0);
+  --input: oklch(0.3 0 0);
+  --ring: oklch(0.72 0.155 246);
+  /* title bar / tab strip chrome */
+  --chrome: oklch(0.14 0 0);
+  /* activity bar — slightly lighter than chrome */
+  --activity: oklch(0.19 0 0);
+  /* bright highlight blue — selected files, active surfaces */
+  --highlight: oklch(0.34 0.09 253);
   /* syntax green #6A9955 */
-  --code-comment: oklch(0.641 0.104 143);
-  /* keyword blue #569CD6 */
-  --code-keyword: oklch(0.667 0.105 253);
+  --code-comment: oklch(0.68 0.13 143);
+  /* bright keyword blue */
+  --code-keyword: oklch(0.72 0.13 253);
   /* syntax orange #CE9178 */
   --code-string: oklch(0.703 0.099 51);
   /* syntax yellow #DCDCAA */
   --code-function: oklch(0.88 0.066 98);
-  --chart-1: oklch(0.552 0.132 253);
-  --chart-2: oklch(0.641 0.104 143);
+  --chart-1: oklch(0.72 0.155 246);
+  --chart-2: oklch(0.68 0.13 143);
   --chart-3: oklch(0.703 0.099 51);
   --chart-4: oklch(0.88 0.066 98);
-  --chart-5: oklch(0.667 0.105 253);
-  /* sidebar #252526 */
-  --sidebar: oklch(0.303 0.003 264);
+  --chart-5: oklch(0.72 0.13 253);
+  /* sidebar */
+  --sidebar: oklch(0.14 0 0);
   --sidebar-foreground: oklch(0.866 0.005 264);
-  --sidebar-primary: oklch(0.552 0.132 253);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  /* selected file: highlight blue #264F78 */
-  --sidebar-accent: oklch(0.411 0.066 253);
+  --sidebar-primary: oklch(0.72 0.155 246);
+  --sidebar-primary-foreground: oklch(0.07 0 0);
+  /* selected file: bright highlight blue */
+  --sidebar-accent: oklch(0.34 0.09 253);
   --sidebar-accent-foreground: oklch(0.866 0.005 264);
-  --sidebar-border: oklch(0.414 0 0);
-  --sidebar-ring: oklch(0.552 0.132 253);
+  --sidebar-border: oklch(0.3 0 0);
+  --sidebar-ring: oklch(0.72 0.155 246);
 }
 
 @layer base {
