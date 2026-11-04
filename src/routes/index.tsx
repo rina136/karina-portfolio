@@ -31,7 +31,7 @@ function Home() {
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild><Link to="/projects">View Projects</Link></Button>
           <Button asChild variant="outline"><Link to="/contact">Contact</Link></Button>
-          <Button asChild variant="ghost"><a href={profile.resume} target="_blank" rel="noreferrer">Resume</a></Button>
+          {/*<Button asChild variant="ghost"><a href={profile.resume} target="_blank" rel="noreferrer">Resume</a></Button>*/}
         </div>
       </div>
       {/*
