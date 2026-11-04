@@ -1,24 +1,43 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { User } from "lucide-react";
+import { profile } from "@/data/portfolio";
+import { Button } from "@/components/ui/button";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Karina — Backend Developer Portfolio" },
+      { name: "description", content: "Portfolio of Karina, Computer Science student and backend developer." },
+      { property: "og:title", content: "Karina — Backend Developer Portfolio" },
+      { property: "og:description", content: "Computer Science student and backend developer." },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <section className="grid items-center gap-10 md:grid-cols-[1fr_auto]">
+      <div>
+        <p className="font-mono text-sm text-code-comment">// welcome.tsx</p>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+          Hi, I'm <span className="text-primary">{profile.name}</span>.
+        </h1>
+        <p className="mt-3 font-mono text-base text-muted-foreground">{profile.role}</p>
+        <p className="mt-6 max-w-xl leading-relaxed">{profile.intro}</p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Button asChild><Link to="/projects">View Projects</Link></Button>
+          <Button asChild variant="outline"><Link to="/contact">Contact</Link></Button>
+          <Button asChild variant="ghost"><a href={profile.resume} target="_blank" rel="noreferrer">Resume</a></Button>
+        </div>
+      </div>
+      <div className="mx-auto flex h-48 w-48 items-center justify-center overflow-hidden rounded-xl border bg-secondary md:h-60 md:w-60">
+        {profile.photo ? (
+          <img src={profile.photo} alt={profile.name} className="h-full w-full object-cover" />
+        ) : (
+          <User size={72} className="text-muted-foreground" aria-label="Profile photo placeholder" />
+        )}
+      </div>
+    </section>
   );
 }
